@@ -1,18 +1,4 @@
-/* 
-==============================================
-CONTENT:	Project Name Here
-AUTHOR:		Your Name Here
-==============================================
-
-TABLE OF CONTENTS:
-
-0. Reset
-1. Main Layout
-2. Content
-
-==============================================
-*/
-/* 0. Reset ================================= */
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -98,12 +84,12 @@ time,
 mark,
 audio,
 video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -118,38 +104,77 @@ hgroup,
 menu,
 nav,
 section {
-	display: block;
+  display: block;
 }
 
 body {
-	line-height: 1;
+  line-height: 1;
 }
 
 ol,
 ul {
-	list-style: none;
+  list-style: none;
 }
 
 blockquote,
 q {
-	quotes: none;
+  quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-	content: '';
-	content: none;
+  content: "";
+  content: none;
 }
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-/* 1. Main Layout ================================= */
+/* 
+==============================================
+CONTENT:	Project Name Here
+AUTHOR:		Eric Canosa
+==============================================
 
+TABLE OF CONTENTS:
 
+0. Reset
+1. STYLES
 
-/* 2. Content ================================= */
+==============================================
+*/
+/* 0. Reset ================================= */
+/* 1. STYLES ================================= */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.card {
+  border: 1px solid gray;
+  border-radius: 5%;
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 70px;
+  height: 100px;
+}
+.card .suit {
+  font-size: 48px;
+}
+.card .suit.♥, .card .suit.♦ {
+  color: red;
+}
+.card .suit.♣, .card .suit.♠ {
+  color: black;
+}
+.deck {
+  display: flex;
+  flex-flow: row wrap;
+  min-height: 500px;
+}
+/*# sourceMappingURL=main.css.map */

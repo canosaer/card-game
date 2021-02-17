@@ -21,3 +21,37 @@ TABLE OF CONTENTS:
 *, *::before, *::after {
 	box-sizing: border-box;
 }
+
+.card {
+	border: 1px solid gray;
+	border-radius: 5%;
+	padding: 1rem;
+	margin: 1rem;
+	display: flex;
+	flex-direction: column;
+	width: 70px;
+	height: 100px;
+	
+
+	.suit {
+		font-size: 48px;
+	}
+
+
+	.suit.♥, .suit.♦{
+		color: red;
+	}
+
+	.suit.♣, .suit.♠{
+		color: black;
+	}
+	.rank {
+
+	}
+}
+
+.deck {
+	display: flex;
+	flex-flow: row wrap;
+	min-height: 500px;
+}

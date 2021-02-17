@@ -1,0 +1,2 @@
+class Card{suit=null;rank=null;constructor(s,t){this.suit=s,this.rank=t}render(){const s=document.createElement("div");s.classList.add("card");const t=document.createElement("span");t.classList.add("suit"),t.classList.add(this.suit),t.innerHTML=this.suit;const n=document.createElement("span");return n.classList.add("rank"),n.innerHTML=this.rank,s.appendChild(n),s.appendChild(t),s}}
+//# sourceMappingURL=card.js.map
