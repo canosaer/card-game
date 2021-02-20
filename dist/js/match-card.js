@@ -1,0 +1,2 @@
+class MatchCard extends Game{start=()=>{this.deck.shuffle(),this.cardFacing="down",this.startCards=this.deck.deal(12),this.startCards.forEach((a=>{console.log(a),this.addCardToBoard(a,this.cardFacing)}))}}new MatchCard;
+//# sourceMappingURL=match-card.js.map

@@ -156,15 +156,17 @@ TABLE OF CONTENTS:
 .card {
   border: 1px solid gray;
   border-radius: 5%;
-  padding: 1rem;
+  padding: 0.5rem;
   margin: 1rem;
   display: flex;
   flex-direction: column;
   width: 70px;
   height: 100px;
+  position: relative;
 }
 .card .suit {
-  font-size: 48px;
+  font-size: 3.5rem;
+  margin: 0 auto;
 }
 .card .suit.♥, .card .suit.♦ {
   color: red;
@@ -172,9 +174,23 @@ TABLE OF CONTENTS:
 .card .suit.♣, .card .suit.♠ {
   color: black;
 }
+.card .rank {
+  font-size: 1rem;
+  font-family: Verdana, sans-serif;
+}
+.card .card-back {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 70px;
+  height: 100px;
+  background: gray;
+  z-index: 1;
+  border-radius: 5%;
+}
+
 .deck {
   display: flex;
   flex-flow: row wrap;
-  min-height: 500px;
 }
 /*# sourceMappingURL=main.css.map */

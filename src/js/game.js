@@ -44,9 +44,9 @@ class Game {
 
     }
 
-    addCardToBoard(card) {
+    addCardToBoard(card, facing) {
         const deckEl = document.querySelector(`.deck`)
-        const cardEl = card.render()
+        const cardEl = card.render(facing)
         deckEl.appendChild(cardEl)
     }
 

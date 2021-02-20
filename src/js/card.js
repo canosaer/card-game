@@ -6,7 +6,7 @@ class Card{
         this.rank = rank;
     }
 
-    render() {
+    render(facing) {
         const cardEl = document.createElement(`div`)
         cardEl.classList.add(`card`)
 
@@ -21,6 +21,12 @@ class Card{
 
         cardEl.appendChild(rankEl)
         cardEl.appendChild(suitEl)
+        if(facing === `down`){
+            console.log(`down`)
+            const cardBack = document.createElement(`div`)
+            cardBack.classList.add(`card-back`)
+            cardEl.appendChild(cardBack)
+        }
 
         return cardEl
     }
