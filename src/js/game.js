@@ -51,18 +51,9 @@ class Game {
     }
 
     showAll() {
-        // const deckEl = document.querySelector(`.deck`)
-        // deckEl.innerHTML = ``
 
         this.cards.forEach((card) => {
             this.addCardToBoard(card)
-            // const cardEl = card.render()
-            // deckEl.appendChild(cardEl)
         })
-    }
-
-
-    finish() {
-
     }
 }
