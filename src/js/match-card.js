@@ -5,7 +5,15 @@ class MatchCard extends Game {
         this.freeze = false
         this.deck.shuffle()
         this.cardFacing = `down`
-        this.startCards = this.deck.deal(12)
+        if(this.deck.cards.length >=12){
+            this.startCards = this.deck.deal(12)
+        }
+        else{
+            this.deck.reset()
+            this.deck.shuffle()
+            this.startCards = this.deck.deal(12)
+        }
+        
         this.startCards.forEach(nextCard => {
             this.addCardToBoard(nextCard, this.cardFacing)
         })

@@ -25,11 +25,10 @@ class Game {
     }
 
     start = () => {
-        console.log(`parent start`)
+
     }
 
     handleStart = () => {
-        console.log(`child start`)
         this.showMessage(`The game has begun!`)
         this.start()
     }

@@ -10,8 +10,6 @@ class Deck {
 
         this.create()
 
-        // this.shuffle()
-        // this.showAll()
     }
 
     create() {
