@@ -708,8 +708,12 @@ TABLE OF CONTENTS:
 }
 
 .deck {
-  display: flex;
-  flex-flow: row wrap;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100px 1rem 100px 1rem 100px 1rem 100px;
+  grid-template-columns: repeat(4, 100px);
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
   justify-content: center;
   -ms-grid-column: 3;
   -ms-grid-column-span: 8;
